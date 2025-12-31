@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #020617; /* Slate 950 */
+  --background: #020617;
   --foreground: #f8fafc;
 }
 
@@ -9,14 +9,21 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  /* অ্যাপের মতো ফিল দেওয়ার জন্য */
-  -webkit-tap-highlight-color: transparent; /* ক্লিকে নীল বক্স আসবে না */
-  user-select: none; /* টেক্সট কপি করা যাবে না অ্যাপের মতো */
-  overscroll-behavior-y: none; /* বাউন্স ইফেক্ট বন্ধ */
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  overscroll-behavior-y: none;
 }
 
-/* স্ক্রলবার লুকানোর জন্য */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+/* Custom animation delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }

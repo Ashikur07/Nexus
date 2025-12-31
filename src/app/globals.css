@@ -1,26 +1,24 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #020617; /* Slate 950 */
+  --foreground: #f8fafc;
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  /* অ্যাপের মতো ফিল দেওয়ার জন্য */
+  -webkit-tap-highlight-color: transparent; /* ক্লিকে নীল বক্স আসবে না */
+  user-select: none; /* টেক্সট কপি করা যাবে না অ্যাপের মতো */
+  overscroll-behavior-y: none; /* বাউন্স ইফেক্ট বন্ধ */
+}
+
+/* স্ক্রলবার লুকানোর জন্য */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }

@@ -49,7 +49,7 @@ export default function TransactionDrawer({ isOpen, onClose, type, onSave }) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 z-50 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/60 z-60 backdrop-blur-sm"
           />
 
           {/* Drawer Panel */}
@@ -58,7 +58,7 @@ export default function TransactionDrawer({ isOpen, onClose, type, onSave }) {
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 rounded-t-3xl z-50 p-6 pb-10"
+            className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 rounded-t-3xl z-60 p-6 pb-10"
           >
             {/* Handle Bar */}
             <div className="w-12 h-1.5 bg-slate-700 rounded-full mx-auto mb-6" />

@@ -7,6 +7,10 @@ import { motion } from "framer-motion";
 export default function BottomNav() {
   const pathname = usePathname();
 
+  if (pathname === "/welcome") {
+    return null;
+  }
+
   const navItems = [
     { name: "Home", href: "/", icon: Home },
     { name: "Wallet", href: "/wallet", icon: Wallet },
